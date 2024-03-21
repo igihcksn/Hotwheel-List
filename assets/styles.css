@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Nunito', sans-serif;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  padding-inline: 16px;
+  max-width: 1200px;
+
+  margin-inline: auto;
+}
+
+/*Header*/
+header {
+  position: relative;
+
+  /* background-color: #047ad2; */
+  /* background-color: #3abfea; */
+  background-color: #1ea7e5;
+  box-shadow: 0 2px 8px 2px #00000055;
+
+  z-index: 9999;
+}
+
+.nav-content {
+  padding-block: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  row-gap: 12px;
+}
+
+.nav-content .brand-name a {
+  text-decoration: none;
+
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+}
+
+header .drawer-button {
+  display: none;
+
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 28px;
+  /* color: #141e16; */
+  color: white;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.nav-content .nav-list {
+  list-style: none;
+
+  display: flex;
+  gap: 24px;
+}
+
+.nav-content .nav-list a {
+  padding: 8px 16px;
+
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-content .nav-list a:hover {
+  text-decoration: underline;
+}
+
+/*Main*/
+/* Jumbotron */
+.jumbotron {
+  background-color: #33333355;
+
+  background-image: url('/assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  padding: 30px 20px;
+}
+
+.jumbotron .container {
+  display: flex;
+
+  min-height: 850px;
+}
+
+.jumbotron .inner-jumbotron {
+  margin: auto;
+}
+
+.jumbotron .inner-jumbotron .jumbotron-logo {
+  width: 100%;
+}
+
+/* Main Content */
+.main-content {
+  padding-block: 32px;
+}
+
+.section-title {
+  font-size: 2rem;
+
+  padding-block: 16px 8px;
+  margin-block-end: 16px;
+}
+
+/* FORM */
+form {
+  margin-block-end: 8px;
+}
+
+.form-group {
+  margin-block-start: 8px;
+}
+
+form input,
+form button {
+  padding: 8px 10px;
+  font-size: 1rem;
+}
+
+form input {
+  width: 100%;
+  max-width: 300px;
+}
+/* FORM */
+
+.cars-list {
+  margin-block: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 24px 18px;
+}
+
+.car-item {
+  margin-inline: auto;
+
+  width: 200px;
+}
+
+.car-item .car-item__model {
+  padding-inline: 8px;
+
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.car-item .car-item__photo {
+  width: 200px;
+  height: 200px;
+
+  margin-block-end: 32px;
+  background-color: white;
+
+  border-radius: 9999px;
+  box-shadow: 0 30px 16px -20px #000000aa;
+  transition: 350ms all ease-in-out;
+}
+
+.car-item .car-item__photo img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 9999px;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Custom Context Menu */
+.custom-context-menu {
+  width: 300px;
+
+  visibility: hidden;
+  scale: 0;
+  background: #fff;
+
+  position: absolute;
+  border-radius: 4px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.custom-context-menu .menu {
+  padding: 10px 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-context-menu .content .menu-item {
+  border-radius: 4px;
+  margin-block-end: 2px;
+
+  list-style: none;
+  font-size: 1em;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.custom-context-menu .content .menu-item:hover {
+  background: #c0c0c0;
+}
+
+.custom-context-menu .content .menu-item button {
+  width: 100%;
+  padding: 12px;
+
+  text-align: start;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+
+  appearance: none;
+
+  cursor: pointer;
+}
+
+@media (any-hover: hover) {
+  .car-item .car-item__photo:hover {
+    translate: 0 -15px;
+
+    box-shadow: 0 50px 30px 0 #00000055;
+  }
+}
+
+/*Footer*/
+.main-footer {
+  padding-block: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  row-gap: 8px;
+
+  color: #6c757d;
+  font-size: medium;
+}
+
+.footer-divider {
+  border-block-color: rgb(238, 238, 238);
+}
+
+.main-footer .policies {
+  display: flex;
+
+  justify-content: space-between;
+  gap: 8px;
+}

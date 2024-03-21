@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Wheels Catalogue</title>
+
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/responsive.css" />
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="/assets/data-cars.js"></script>
+    <script defer src="/assets/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-content">
+          <div class="brand-name">
+            <a href="#">Hot Wheels Catalogue</a>
+          </div>
+          <nav id="main-nav" class="main-nav">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+
+          <button id="drawer-button" class="drawer-button">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="jumbotron">
+        <div class="container">
+          <div class="inner-jumbotron">
+            <img
+              class="jumbotron-logo"
+              src="/assets/images/logo.png"
+              alt="Hot Wheels Logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content">
+        <div class="container">
+          <section class="cars-form">
+            <div class="section-title">
+              <h3>Find Your Favorite Cars Now!</h3>
+            </div>
+
+            <form id="cars-form">
+              <div class="form-group">
+                <label for="car-model">Model</label><br />
+                <input id="car-model" name="carModel" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="car-series">Series</label><br />
+                <input id="car-series" name="carSeries" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="car-photo-url">Photo URL</label><br />
+                <input id="car-photo-url" name="carPhotoUrl" type="url" required />
+              </div>
+
+              <div class="form-group">
+                <button>Save</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="cars-container">
+            <div class="section-title">
+              <h3>List of Cars</h3>
+            </div>
+
+            <div id="cars-list" class="cars-list cards">
+              <article
+                class="card car-item"
+                title="'67 Shelby GT500 - 2010 New Models"
+                data-id="98765"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/67_Shelby_GT500_-_2010_NM.jpg"
+                    alt="'67 Shelby GT500"
+                  />
+                </div>
+                <div class="car-item__model">'67 Shelby GT500</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="Tooligan - 2010 New Models"
+                data-id="54321"
+              >
+                <div class="car-item__photo">
+                  <img src="/assets/images/cars/Tooligan_-_10_NM.jpg" alt="Tooligan" />
+                </div>
+                <div class="car-item__model">Tooligan</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="Lamborghini Reventón Roadster - 2010 New Models"
+                data-id="87654"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/REVENT%C3%93N_ROADSTER_A.jpg"
+                    alt="Lamborghini Reventón Roadster"
+                  />
+                </div>
+                <div class="car-item__model">Lamborghini Reventón Roadster</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="Danicar - 2011 New Models"
+                data-id="13579"
+              >
+                <div class="car-item__photo">
+                  <img src="/assets/images/cars/Danicar_Yellow.jpg" alt="Danicar" />
+                </div>
+                <div class="car-item__model">Danicar</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="'72 Ford Gran Torino Sport - 2011 New Models"
+                data-id="24680"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/72GranTorino_Green.jpg"
+                    alt="'72 Ford Gran Torino Sport"
+                  />
+                </div>
+                <div class="car-item__model">'72 Ford Gran Torino Sport</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="'10 Ford Shelby GT-500 Super Snake - 2011 New Models"
+                data-id="11223"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/GT_500_SUPER_SNAKE_2011_A.jpg"
+                    alt="'10 Ford Shelby GT-500 Super Snake"
+                  />
+                </div>
+                <div class="car-item__model">'10 Ford Shelby GT-500 Super Snake</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="BMW M3 GT2 - 2012 New Models"
+                data-id="33445"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/Bmw_m3_gt2_2012_white.png"
+                    alt="BMW M3 GT2"
+                  />
+                </div>
+                <div class="car-item__model">BMW M3 GT2</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="'64 Chevy Chevelle SS - 2012 New Models"
+                data-id="55667"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/64_chevy_chevelle_ss_2012_red.png"
+                    alt="'64 Chevy Chevelle SS"
+                  />
+                </div>
+                <div class="car-item__model">'64 Chevy Chevelle SS</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="Cadillac Sixteen Concept - Street Power"
+                data-id="77889"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/2013_X1662_Cadillac_Sixteen.jpg"
+                    alt="Cadillac Sixteen Concept"
+                  />
+                </div>
+                <div class="car-item__model">Cadillac Sixteen Concept</div>
+              </article>
+
+              <article
+                class="card car-item"
+                title="'70 Dodge Charger R/T - Street Power"
+                data-id="99000"
+              >
+                <div class="car-item__photo">
+                  <img
+                    src="/assets/images/cars/T-2013_003.jpg"
+                    alt="'70 Dodge Charger R/T"
+                  />
+                </div>
+                <div class="car-item__model">'70 Dodge Charger R/T</div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <hr class="footer-divider" />
+        <div class="main-footer">
+          <div class="copyright">© 2024 Hot Wheels Catalogue | ILT 2</div>
+          <div class="policies">
+            <a href="#" class="remove-style-link">Terms</a>
+            <span>&bullet;</span>
+            <a href="#" class="remove-style-link">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="custom-context-menu" class="custom-context-menu wrapper">
+      <div class="content">
+        <ul class="menu">
+          <li class="menu-item">
+            <button id="delete-menu"><i class="fas fa-trash"></i> Delete</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
